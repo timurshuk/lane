@@ -146,3 +146,7 @@ func (s *Deque) Full() bool {
 
 	return s.capacity >= 0 && s.container.Len() >= s.capacity
 }
+
+func (s *Deque) GetContainer() *list.List {
+	return s.container
+}
